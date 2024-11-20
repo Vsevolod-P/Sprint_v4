@@ -28,7 +28,7 @@ public class MainPage extends BasePage {
     public void closeCookie(){
         cookies.click();
     }
-
+    // Находим заданный текст и вопрос
     public String getText(int textIndex, String expectedQuestion){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement button = driver.findElement(By.xpath(String.format(expectedQuestionLink, expectedQuestion)));

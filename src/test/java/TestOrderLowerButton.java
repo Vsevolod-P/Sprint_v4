@@ -55,10 +55,11 @@ public class TestOrderLowerButton {
     @Parameterized.Parameters
     public static Object[][] testData() {
         return new Object[][] {
-                {"Васян", "Пупкин", "Москва, улица Вязовка","Сокол","89997772233","23.12.2025","трое суток", "black", " "}
+                {"Васян", "Пупкин", "Москва, улица Вязовка","Сокол","89997772233","23.12.2025","трое суток", "black", " "},
+                {"Стасян", "Старавойтов", "Москва, улица Некрасовка","Проспект Мира","88886662233","19.01.2025","трое суток", "grey", " "}
         };
     }
-
+    // Проверяем появление экрана успеха в заказе
     @Test
     public void TestOrderUpButtonTest(){
         OrderPage orderPage = new OrderPage(driver);
